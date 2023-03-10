@@ -1,0 +1,66 @@
+dup.o: ../../../../binutils-2.30/gdb/gnulib/import/dup.c ../config.h \
+ unistd.h C:/msys64/mingw32/i686-w64-mingw32/include/unistd.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/io.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h string.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/string.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/string_s.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/stddef.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/stddef.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_off_t.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/process.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_startup.h sys/types.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sys/types.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/getopt.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/pthread_unistd.h stdlib.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/stdlib.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_wstdlib.h limits.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/limits.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/syslimits.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/limits.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/malloc.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/direct.h errno.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/errno.h \
+ ../../../../binutils-2.30/gdb/gnulib/import/msvc-inval.h
+../config.h:
+unistd.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/unistd.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/io.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h:
+string.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/string.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/string_s.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/stddef.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/stddef.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_off_t.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/process.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_startup.h:
+sys/types.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sys/types.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/getopt.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/pthread_unistd.h:
+stdlib.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/stdlib.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_wstdlib.h:
+limits.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/limits.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/syslimits.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/limits.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdlib_s.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/malloc.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/direct.h:
+errno.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/errno.h:
+../../../../binutils-2.30/gdb/gnulib/import/msvc-inval.h:

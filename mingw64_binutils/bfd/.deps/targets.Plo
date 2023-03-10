@@ -1,0 +1,116 @@
+targets.lo: ../../binutils-2.30/bfd/targets.c \
+ ../../binutils-2.30/bfd/sysdep.h config.h \
+ ../../binutils-2.30/bfd/../include/ansidecl.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/stddef.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/stddef.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/stdio.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_stdio_config.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_off_t.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/swprintf.inl \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sys/types.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sys/stat.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/io.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/string.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/string_s.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_stat64.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/errno.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/strings.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/stdlib.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/limits.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/syslimits.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/limits.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/malloc.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sys/time.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/time.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_timeval.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sys/timeb.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/pthread_time.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/unistd.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/process.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_startup.h \
+ ../../binutils-2.30/bfd/../include/getopt.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/pthread_unistd.h \
+ ../../binutils-2.30/bfd/../include/fopen-bin.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/fcntl.h \
+ ../../binutils-2.30/bfd/../include/filenames.h \
+ ../../binutils-2.30/bfd/../include/hashtab.h \
+ ../../binutils-2.30/bfd/../include/ansidecl.h \
+ C:/msys64/mingw32/include/libintl.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/locale.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/stdarg.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/stdarg.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_stdarg.h bfd.h \
+ ../../binutils-2.30/bfd/../include/symcat.h \
+ ../../binutils-2.30/bfd/libbfd.h \
+ ../../binutils-2.30/bfd/../include/hashtab.h \
+ ../../binutils-2.30/bfd/../include/fnmatch.h targmatch.h
+../../binutils-2.30/bfd/sysdep.h:
+config.h:
+../../binutils-2.30/bfd/../include/ansidecl.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/stddef.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/stddef.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/stdio.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_stdio_config.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_off_t.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/swprintf.inl:
+C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdio_s.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sys/types.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sys/stat.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/io.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/string.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/string_s.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_stat64.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/errno.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/strings.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/stdlib.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_wstdlib.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/limits.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include-fixed/syslimits.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/limits.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/stdlib_s.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/malloc.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sys/time.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/time.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_timeval.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sys/timeb.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sec_api/sys/timeb_s.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/pthread_time.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/unistd.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/process.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt_startup.h:
+../../binutils-2.30/bfd/../include/getopt.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/pthread_unistd.h:
+../../binutils-2.30/bfd/../include/fopen-bin.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/fcntl.h:
+../../binutils-2.30/bfd/../include/filenames.h:
+../../binutils-2.30/bfd/../include/hashtab.h:
+../../binutils-2.30/bfd/../include/ansidecl.h:
+C:/msys64/mingw32/include/libintl.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/locale.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/stdarg.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/stdarg.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_stdarg.h:
+bfd.h:
+../../binutils-2.30/bfd/../include/symcat.h:
+../../binutils-2.30/bfd/libbfd.h:
+../../binutils-2.30/bfd/../include/hashtab.h:
+../../binutils-2.30/bfd/../include/fnmatch.h:
+targmatch.h:

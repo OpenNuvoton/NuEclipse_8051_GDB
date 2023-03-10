@@ -1,0 +1,29 @@
+frexpl.o: ../../../../binutils-2.30/gdb/gnulib/import/frexpl.c \
+ ../config.h ../../../../binutils-2.30/gdb/gnulib/import/frexp.c math.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/math.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/corecrt.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/float.h \
+ C:/msys64/mingw32/i686-w64-mingw32/include/float.h \
+ ../../../../binutils-2.30/gdb/gnulib/import/isnanl-nolibm.h \
+ ../../../../binutils-2.30/gdb/gnulib/import/fpucw.h
+../config.h:
+../../../../binutils-2.30/gdb/gnulib/import/frexp.c:
+math.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/math.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/crtdefs.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/corecrt.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_mac.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/_mingw_secapi.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/vadefs.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/sdks/_mingw_ddk.h:
+C:/msys64/mingw32/lib/gcc/i686-w64-mingw32/10.2.0/include/float.h:
+C:/msys64/mingw32/i686-w64-mingw32/include/float.h:
+../../../../binutils-2.30/gdb/gnulib/import/isnanl-nolibm.h:
+../../../../binutils-2.30/gdb/gnulib/import/fpucw.h:
