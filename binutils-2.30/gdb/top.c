@@ -1310,8 +1310,8 @@ and \"show warranty\" for details.\n");
   fprintf_filtered (stream, "This GDB was configured as \"");
   if (strcmp (host_name, target_name) != 0)
     {
-      fprintf_filtered (stream, "--host=%s --target=%s",
-			host_name, target_name);
+      fprintf_filtered (stream, "--host=%s --target=numicro8051-none-elf32",
+			host_name);
     }
   else
     {
@@ -1340,8 +1340,8 @@ print_gdb_configuration (struct ui_file *stream)
 {
   fprintf_filtered (stream, _("\
 This GDB was configured as follows:\n\
-   configure --host=%s --target=%s\n\
-"), host_name, target_name);
+   configure --host=%s --target=numicro8051-none-elf32\n\
+"), host_name);
   fprintf_filtered (stream, _("\
              --with-auto-load-dir=%s\n\
              --with-auto-load-safe-path=%s\n\

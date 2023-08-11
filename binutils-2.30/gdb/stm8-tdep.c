@@ -203,7 +203,7 @@ stm8_register_type (struct gdbarch *gdbarch, int regnum)
 	switch (regnum)
 	{
 	case NU51_PC_REGNUM:
-		return builtin_type(gdbarch)->builtin_uint32;
+		return builtin_type(gdbarch)->builtin_uint16;
 		//	case STM8_PC_REGNUM:
 		//		return builtin_type (gdbarch)->builtin_uint32;
 		//	case STM8_SP_REGNUM:
@@ -814,12 +814,12 @@ stm8_frame_cache (struct frame_info *next_frame, void **this_cache)
 
 		CORE_ADDR frame_pc;
 		CORE_ADDR frame_sp;
-		frame_pc = value_as_long(trad_frame_get_prev_register (next_frame, cache->saved_regs, STM8_PC_REGNUM));
-		frame_sp =  value_as_long(trad_frame_get_prev_register (next_frame, cache->saved_regs, STM8_SP_REGNUM));
+		frame_pc = value_as_long(trad_frame_get_prev_register(next_frame, cache->saved_regs, NU51_PC_REGNUM));
+		frame_sp = value_as_long(trad_frame_get_prev_register(next_frame, cache->saved_regs, NU51_SP_REGNUM));
 
 		frame_pc = frame_pc >> 16;
-		fprintf_unfiltered (gdb_stdlog, "stm8_frame_cache: (next_frame=%p) pc=%8.8lx *pc=%8.8lx\n", next_frame, (unsigned long)cache->saved_regs[STM8_PC_REGNUM].addr, (unsigned long)frame_pc);
-		fprintf_unfiltered (gdb_stdlog, "stm8_frame_cache: (next_frame=%p) sp=%8.8lx *sp=%8.8lx\n", next_frame, (unsigned long)cache->saved_regs[STM8_SP_REGNUM].addr, (unsigned long)frame_sp);
+		fprintf_unfiltered(gdb_stdlog, "stm8_frame_cache: (next_frame=%p) pc=%8.8lx *pc=%8.8lx\n", next_frame, (unsigned long)cache->saved_regs[NU51_PC_REGNUM].addr, (unsigned long)frame_pc);
+		fprintf_unfiltered(gdb_stdlog, "stm8_frame_cache: (next_frame=%p) sp=%8.8lx *sp=%8.8lx\n", next_frame, (unsigned long)cache->saved_regs[NU51_SP_REGNUM].addr, (unsigned long)frame_sp);
 	}
 
 	return (struct stm8_frame_cache *) (*this_cache);

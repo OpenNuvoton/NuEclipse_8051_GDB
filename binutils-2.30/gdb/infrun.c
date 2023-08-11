@@ -86,7 +86,7 @@ void nullify_last_target_wait_ptid (void);
 
 static void insert_hp_step_resume_breakpoint_at_frame (struct frame_info *);
 
-static void insert_step_resume_breakpoint_at_caller (struct frame_info *);
+static void insert_step_resume_breakpoint_at_caller (struct frame_info *, struct execution_control_state *ecs);
 
 static void insert_longjmp_resume_breakpoint (struct gdbarch *, CORE_ADDR);
 
@@ -6647,14 +6647,16 @@ process_event_stop_test (struct execution_control_state *ecs)
      initial outermost frame, before sp was valid, would
      have code_addr == &_start.  See the comment in frame_id_eq
      for more.  */
-  if (!frame_id_eq (get_stack_frame_id (frame),
-		    ecs->event_thread->control.step_stack_frame_id)
-      && (frame_id_eq (frame_unwind_caller_id (get_current_frame ()),
-		       ecs->event_thread->control.step_stack_frame_id)
-	  && (!frame_id_eq (ecs->event_thread->control.step_stack_frame_id,
-			    outer_frame_id)
-	      || (ecs->event_thread->control.step_start_function
-		  != find_pc_function (stop_pc)))))
+//  if (!frame_id_eq (get_stack_frame_id (frame),
+//		    ecs->event_thread->control.step_stack_frame_id)
+//      && (frame_id_eq (frame_unwind_caller_id (get_current_frame ()),
+//		       ecs->event_thread->control.step_stack_frame_id)
+//	  && (!frame_id_eq (ecs->event_thread->control.step_stack_frame_id,
+//			    outer_frame_id)
+//	      || (ecs->event_thread->control.step_start_function
+//		  != find_pc_function (stop_pc)))))
+
+    if (!frame_id_eq (get_stack_frame_id (frame), ecs->event_thread->control.step_stack_frame_id))
     {
       CORE_ADDR real_stop_pc;
 
@@ -6719,8 +6721,14 @@ process_event_stop_test (struct execution_control_state *ecs)
 		}
 	    }
 	  else
-	    insert_step_resume_breakpoint_at_caller (frame);
-
+	  {
+		if (ecs->event_thread->control.step_range_end - ecs->event_thread->control.step_range_start == 1)
+		{
+			end_stepping_range (ecs);
+			return;
+		}
+	    insert_step_resume_breakpoint_at_caller (frame, ecs);
+	  }
 	  keep_going (ecs);
 	  return;
 	}
@@ -6802,7 +6810,7 @@ process_event_stop_test (struct execution_control_state *ecs)
       else
 	/* Set a breakpoint at callee's return address (the address
 	   at which the caller will resume).  */
-	insert_step_resume_breakpoint_at_caller (frame);
+	insert_step_resume_breakpoint_at_caller (frame, ecs);
 
       keep_going (ecs);
       return;
@@ -6874,7 +6882,7 @@ process_event_stop_test (struct execution_control_state *ecs)
 	{
 	  /* Set a breakpoint at callee's return address (the address
 	     at which the caller will resume).  */
-	  insert_step_resume_breakpoint_at_caller (frame);
+	  insert_step_resume_breakpoint_at_caller (frame, ecs);
 	  keep_going (ecs);
 	  return;
 	}
@@ -6898,7 +6906,8 @@ process_event_stop_test (struct execution_control_state *ecs)
          or can this happen as a result of a return or longjmp?).  */
       if (debug_infrun)
 	 fprintf_unfiltered (gdb_stdlog, "infrun: no line number info\n");
-      end_stepping_range (ecs);
+      //end_stepping_range (ecs);
+      keep_going (ecs);
       return;
     }
 
@@ -7457,7 +7466,7 @@ insert_hp_step_resume_breakpoint_at_frame (struct frame_info *return_frame)
    of frame_unwind_caller_id for an example).  */
 
 static void
-insert_step_resume_breakpoint_at_caller (struct frame_info *next_frame)
+insert_step_resume_breakpoint_at_caller (struct frame_info *next_frame, struct execution_control_state *ecs)
 {
   /* We shouldn't have gotten here if we don't know where the call site
      is.  */
@@ -7468,6 +7477,8 @@ insert_step_resume_breakpoint_at_caller (struct frame_info *next_frame)
   symtab_and_line sr_sal;
   sr_sal.pc = gdbarch_addr_bits_remove (gdbarch,
 					frame_unwind_caller_pc (next_frame));
+
+  sr_sal.pc = ecs->event_thread->control.step_range_end;
   sr_sal.section = find_pc_overlay (sr_sal.pc);
   sr_sal.pspace = frame_unwind_program_space (next_frame);
 
